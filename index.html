@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TOUCH — Aesthetic &amp; Medical care | Beograd</title>
+<meta name="description" content="TOUCH Aesthetic & Medical care — manikir, pedikir i medicinski pedikir u istorijskom delu Beograda.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ДЕКОРАТИВНИ ФОН -->
+<div class="bg-decor" aria-hidden="true">
+  <span class="blob blob-1"></span>
+  <span class="blob blob-2"></span>
+  <span class="blob blob-3"></span>
+</div>
+
+<!-- ======================= HEADER ======================= -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+
+    <a href="#home" class="logo" data-nav="home">
+      <span class="logo-mark">TOUCH</span>
+      <span class="logo-sub" data-sr="Estetska &amp; medicinska nega" data-en="Aesthetic &amp; Medical care">Estetska &amp; medicinska nega</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Glavna navigacija">
+      <a href="#home"     class="nav-link is-active" data-nav="home"     data-sr="Početna"       data-en="Home">Početna</a>
+      <a href="#about"    class="nav-link"           data-nav="about"    data-sr="O nama"        data-en="About us">O nama</a>
+      <a href="#services" class="nav-link"           data-nav="services" data-sr="Usluge i cene" data-en="Services &amp; prices">Usluge i cene</a>
+      <a href="#contacts" class="nav-link"           data-nav="contacts" data-sr="Kontakt"       data-en="Contact">Kontakt</a>
+    </nav>
+
+    <div class="header-tools">
+      <div class="lang-switch" role="group" aria-label="Jezik / Language">
+        <button type="button" class="lang-btn is-active" data-lang="sr">SR</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+
+      <a href="#contacts" class="btn btn-mini" data-nav="contacts"
+         data-sr="Zakaži" data-en="Book">Zakaži</a>
+
+      <button type="button" class="burger" id="burger" aria-label="Meni" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<main>
+
+<!-- ======================= POČETNA ======================= -->
+<section id="home" class="page is-active">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="container hero-inner">
+
+      <div class="hero-text">
+        <p class="eyebrow reveal" data-sr="Dobrodošli u TOUCH" data-en="Welcome to TOUCH">Dobrodošli u TOUCH</p>
+
+        <h1 class="hero-title reveal">
+          <span class="line" data-sr="Manikir · Pedikir" data-en="Manicure · Pedicure">Manikir · Pedikir</span>
+          <span class="line line-accent" data-sr="Medicinski pedikir" data-en="Medical pedicure">Medicinski pedikir</span>
+        </h1>
+
+        <p class="hero-tagline reveal"
+           data-sr="Sa ljubavlju i pažnjom prema svakom klijentu."
+           data-en="With love and care for every client.">Sa ljubavlju i pažnjom prema svakom klijentu.</p>
+
+        <div class="hero-actions reveal">
+          <a href="#contacts" class="btn btn-primary" data-nav="contacts"
+             data-sr="Zakaži termin" data-en="Book an appointment">Zakaži termin</a>
+          <a href="#services" class="btn btn-ghost" data-nav="services"
+             data-sr="Pogledaj cene" data-en="View prices">Pogledaj cene</a>
+        </div>
+
+        <ul class="hero-stats reveal">
+          <li>
+            <strong>1000+</strong>
+            <span data-sr="zadovoljnih klijenata" data-en="happy clients">zadovoljnih klijenata</span>
+          </li>
+          <li>
+            <strong>5★</strong>
+            <span data-sr="prosečna ocena" data-en="average rating">prosečna ocena</span>
+          </li>
+          <li>
+            <strong>100%</strong>
+            <span data-sr="sterilni instrumenti" data-en="sterile instruments">sterilni instrumenti</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <span class="hero-card-label" data-sr="TOUCH salon" data-en="TOUCH salon">TOUCH salon</span>
+            <p class="hero-card-quote" data-sr="„Sve počinje dodirom“" data-en="“Everything begins with a touch”">„Sve počinje dodirom“</p>
+            <div class="hero-card-line"></div>
+            <span class="hero-card-loc" data-sr="Beograd · Centar" data-en="Belgrade · Center">Beograd · Centar</span>
+          </div>
+          <div class="hero-card-ring"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ZAŠTO MI -->
+  <div class="section">
+    <div class="container">
+      <div class="section-title reveal">
+        <p class="eyebrow" data-sr="Naše prednosti" data-en="Our advantages">Naše prednosti</p>
+        <h2 data-sr="Zašto mi?" data-en="Why us?">Zašto mi?</h2>
+      </div>
+
+      <div class="features">
+
+        <article class="feature reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3l7 3v6c0 4.2-2.9 7.7-7 9-4.1-1.3-7-4.8-7-9V6l7-3z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <span class="feature-num">01</span>
+          <h3 data-sr="Bezbednost" data-en="Safety">Bezbednost</h3>
+          <p data-sr="Sterilnost, kvalitetni materijali i instrumenti."
+             data-en="Sterility, quality materials and instruments.">Sterilnost, kvalitetni materijali i instrumenti.</p>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20.5 3.5C11 4 5.5 9 5.5 15.5c0 2.8 2.2 5 5 5 7 0 10-7.5 10-17z"/>
+              <path d="M4 20.5c2-5.5 5.5-9.5 10-12"/>
+            </svg>
+          </div>
+          <span class="feature-num">02</span>
+          <h3 data-sr="Individualni pristup" data-en="Individual approach">Individualni pristup</h3>
+          <p data-sr="Negu biramo prema vašim potrebama."
+             data-en="We choose the care according to your needs.">Negu biramo prema vašim potrebama.</p>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 20s-7-4.4-7-9.4A4.1 4.1 0 0 1 12 7.6a4.1 4.1 0 0 1 7 3c0 5-7 9.4-7 9.4z"/>
+            </svg>
+          </div>
+          <span class="feature-num">03</span>
+          <h3 data-sr="Komfor" data-en="Comfort">Komfor</h3>
+          <p data-sr="Prijatna atmosfera i pažnja prema detaljima."
+             data-en="A pleasant atmosphere and attention to detail.">Prijatna atmosfera i pažnja prema detaljima.</p>
+        </article>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- TEKST -->
+  <div class="section">
+    <div class="container narrow">
+      <div class="quote-block reveal">
+        <p class="lead"
+           data-sr="Verujemo da dobro obavljena usluga nije samo lep rezultat, već i komfor, bezbednost i pažnja prema detaljima. Zato radimo temeljno, bez žurbe, i biramo proceduru upravo prema tipu i stanju vaših noktiju i kože."
+           data-en="We believe that a well-performed service is not only a beautiful result, but also comfort, safety and attention to detail. That is why we work thoroughly, without rushing, and choose the procedure according to the type and condition of your nails and skin.">Verujemo da dobro obavljena usluga nije samo lep rezultat, već i komfor, bezbednost i pažnja prema detaljima. Zato radimo temeljno, bez žurbe, i biramo proceduru upravo prema tipu i stanju vaših noktiju i kože.</p>
+
+        <p class="lead"
+           data-sr="Naš tim čine ruske majstorice sa različitim iskustvom i specijalizacijom. Spajamo profesionalne veštine i individualni pristup kako bismo postigle kvalitetan rezultat koji odgovara vašim željama i karakteristikama."
+           data-en="Our team consists of Russian masters with different experience and specialisations. We combine professional skills and an individual approach to create a quality result that matches your wishes and characteristics.">Naš tim čine ruske majstorice sa različitim iskustvom i specijalizacijom. Spajamo profesionalne veštine i individualni pristup kako bismo postigle kvalitetan rezultat koji odgovara vašim željama i karakteristikama.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TIM -->
+  <div class="section">
+    <div class="container">
+      <div class="section-title reveal">
+        <p class="eyebrow" data-sr="Upoznajte nas" data-en="Meet us">Upoznajte nas</p>
+        <h2 data-sr="Naš tim" data-en="Our team">Naš tim</h2>
+        <p class="slogan" data-sr="Sve počinje dodirom" data-en="Everything begins with a touch">Sve počinje dodirom</p>
+      </div>
+
+      <div class="team">
+
+        <article class="master reveal">
+          <div class="photo">
+            <span data-sr="Foto" data-en="Photo">Foto</span>
+          </div>
+          <div class="master-info">
+            <h3 data-sr="Ime majstora" data-en="Master's name">Ime majstora</h3>
+            <p data-sr="Manikir &amp; pedikir" data-en="Manicure &amp; pedicure">Manikir &amp; pedikir</p>
+          </div>
+        </article>
+
+        <article class="master reveal">
+          <div class="photo">
+            <span data-sr="Foto" data-en="Photo">Foto</span>
+          </div>
+          <div class="master-info">
+            <h3 data-sr="Ime majstora" data-en="Master's name">Ime majstora</h3>
+            <p data-sr="Medicinski pedikir" data-en="Medical pedicure">Medicinski pedikir</p>
+          </div>
+        </article>
+
+        <article class="master reveal">
+          <div class="photo">
+            <span data-sr="Foto" data-en="Photo">Foto</span>
+          </div>
+          <div class="master-info">
+            <h3 data-sr="Ime majstora" data-en="Master's name">Ime majstora</h3>
+            <p data-sr="Produžavanje noktiju" data-en="Nail extensions">Produžavanje noktiju</p>
+          </div>
+        </article>
+
+        <article class="master reveal">
+          <div class="photo">
+            <span data-sr="Foto" data-en="Photo">Foto</span>
+          </div>
+          <div class="master-info">
+            <h3 data-sr="Ime majstora" data-en="Master's name">Ime majstora</h3>
+            <p data-sr="Nega noktiju i kože" data-en="Nail and skin care">Nega noktiju i kože</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- RECENZIJE -->
+  <div class="section section-alt">
+    <div class="container">
+      <div class="section-title reveal">
+        <p class="eyebrow" data-sr="Poverenje klijenata" data-en="Client trust">Poverenje klijenata</p>
+        <h2 data-sr="Recenzije" data-en="Reviews">Recenzije</h2>
+      </div>
+
+      <div class="reviews">
+        <div class="review-slot reveal">
+          <span class="review-quote">„</span>
+          <p data-sr="Mesto za screenshot recenzije" data-en="Place for a review screenshot">Mesto za screenshot recenzije</p>
+        </div>
+        <div class="review-slot reveal">
+          <span class="review-quote">„</span>
+          <p data-sr="Mesto za screenshot recenzije" data-en="Place for a review screenshot">Mesto za screenshot recenzije</p>
+        </div>
+        <div class="review-slot reveal">
+          <span class="review-quote">„</span>
+          <p data-sr="Mesto za screenshot recenzije" data-en="Place for a review screenshot">Mesto za screenshot recenzije</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ======================= O NAMA ======================= -->
+<section id="about" class="page">
+  <div class="section">
+    <div class="container">
+      <div class="section-title reveal">
+        <p class="eyebrow" data-sr="Ko smo mi" data-en="Who we are">Ko smo mi</p>
+        <h2 data-sr="O nama" data-en="About us">O nama</h2>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-photo reveal">
+          <span data-sr="Foto salona" data-en="Salon photo">Foto salona</span>
+          <div class="about-photo-badge">
+            <strong>TOUCH</strong>
+            <span data-sr="Beograd" data-en="Belgrade">Beograd</span>
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <h3 class="about-welcome"
+              data-sr="Dobrodošli u naš salon TOUCH u istorijskom delu Beograda."
+              data-en="Welcome to our TOUCH salon in the historic part of Belgrade.">Dobrodošli u naš salon TOUCH u istorijskom delu Beograda.</h3>
+
+          <p data-sr="TOUCH je mesto gde se estetska nega i medicinski pristup spajaju u jednu celinu. Naš cilj je zdravlje i lepota vaših noktiju i kože — bez kompromisa."
+             data-en="TOUCH is a place where aesthetic care and a medical approach come together as one. Our goal is the health and beauty of your nails and skin — without compromise.">TOUCH je mesto gde se estetska nega i medicinski pristup spajaju u jednu celinu. Naš cilj je zdravlje i lepota vaših noktiju i kože — bez kompromisa.</p>
+
+          <p data-sr="Radimo isključivo sa sterilnim instrumentima i kvalitetnim materijalima, a svakoj klijentkinji posvećujemo vreme koje joj je potrebno. Ne radimo u žurbi i ne koristimo univerzalna rešenja."
+             data-en="We work only with sterile instruments and quality materials, and we give every client the time she needs. We do not rush and we do not use one-size-fits-all solutions.">Radimo isključivo sa sterilnim instrumentima i kvalitetnim materijalima, a svakoj klijentkinji posvećujemo vreme koje joj je potrebno. Ne radimo u žurbi i ne koristimo univerzalna rešenja.</p>
+
+          <ul class="about-list">
+            <li data-sr="Manikir i pedikir najvišeg kvaliteta" data-en="Manicure and pedicure of the highest quality">Manikir i pedikir najvišeg kvaliteta</li>
+            <li data-sr="Medicinski pedikir i nega problematičnih noktiju" data-en="Medical pedicure and care for problematic nails">Medicinski pedikir i nega problematičnih noktiju</li>
+            <li data-sr="Individualan pristup i pažnja prema detaljima" data-en="Individual approach and attention to detail">Individualan pristup i pažnja prema detaljima</li>
+          </ul>
+
+          <a href="#contacts" class="btn btn-primary" data-nav="contacts"
+             data-sr="Zakaži termin" data-en="Book an appointment">Zakaži termin</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= USLUGE I CENE ======================= -->
+<section id="services" class="page">
+  <div class="section">
+    <div class="container">
+      <div class="section-title reveal">
+        <p class="eyebrow" data-sr="Cenovnik" data-en="Price list">Cenovnik</p>
+        <h2 data-sr="Usluge i cene" data-en="Services &amp; prices">Usluge i cene</h2>
+      </div>
+
+      <div class="price-groups">
+
+        <div class="price-card reveal">
+          <div class="price-card-head">
+            <h3 data-sr="Manikir" data-en="Manicure">Manikir</h3>
+            <span class="price-card-icon">✦</span>
+          </div>
+          <ul>
+            <li class="price-row">
+              <span data-sr="Klasični manikir" data-en="Classic manicure">Klasični manikir</span>
+              <i class="dots"></i><span class="value">2.000 <small>RSD</small></span>
+            </li>
+            <li class="price-row">
+              <span data-sr="Manikir sa gel lakom" data-en="Manicure with gel polish">Manikir sa gel lakom</span>
+              <i class="dots"></i><span class="value">3.000 <small>RSD</small></span>
+            </li>
+            <li class="price-row">
+              <span data-sr="Produžavanje noktiju gelom" data-en="Gel nail extensions">Produžavanje noktiju gelom</span>
+              <i class="dots"></i><span class="value">4.500 <small>RSD</small></span>
+            </li>
+            <li class="price-row">
+              <span data-sr="Korekcija produženih noktiju" data-en="Extension refill">Korekcija produženih noktiju</span>
+              <i class="dots"></i><span class="value">3.500 <small>RSD</small></span>
+            </li>
+            <li class="price-row">
+              <span data-sr="Skidanje gel laka" data-en="Gel polish removal">Skidanje gel laka</span>
+              <i class="dots"></i><span class="value">800 <small>RSD</small></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="price-card reveal">
+          <div class="price-card-head">
+            <h3 data-sr="Pedikir" data-en="Pedicure">Pedikir</h3>
+            <span class="price-card-icon">✦</span>
+          </div>
+          <ul>
+            <li class="price-row">
+              <span data-sr="Klasični pedikir" data-en="Classic pedicure">Klasični pedikir</span>
+              <i class="dots"></i><span class="value">2.500 <small>RSD</small></span>
+            </li>
+            <li class="price-row">
+              <span data-sr="Pedikir sa gel lakom" data-en="Pedicure with gel polish">Pedikir sa gel lakom</span>
+              <i class="dots"></i><span class="value">3.500 <small>RSD</small></span>
+            </li>
+            <li class="price-row">
+              <span data-sr="Paket: manikir + pedikir" data-en="Package: manicure + pedicure">Paket: manikir + pedikir</span>
+              <i class="dots"></i><span class="value">4.500 <small>RSD</small></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="price-card price-card-featured reveal">
+          <span class="price-card-tag" data-sr="Preporučeno" data-en="Recommended">Preporučeno</span>
+          <div class="price-card-head">
+            <h3 data-sr="Medicinski pedikir" data-en="Medical pedicure">Medicinski pedikir</h3>
+            <span class="price-card-icon">✦</span>
+          </div>
+          <ul>
+            <li class="price-row">
+              <span data-sr="Medicinski pedikir — delimični" data-en="Medical pedicure — partial">Medicinski pedikir — delimični</span>
+              <i class="dots"></i><span class="value">3.000 <small>RSD</small></span>
+            </li>
+            <li class="price-row">
+              <span data-sr="Medicinski pedikir — kompletan" data-en="Medical pedicure — full">Medicinski pedikir — kompletan</span>
+              <i class="dots"></i><span class="value">4.500 <small>RSD</small></span>
+            </li>
+            <li class="price-row">
+              <span data-sr="Tretman uraslog nokta" data-en="Ingrown nail treatment">Tretman uraslog nokta</span>
+              <i class="dots"></i><span class="value">3.500 <small>RSD</small></span>
+            </li>
+            <li class="price-row">
+              <span data-sr="Tretman žuljeva i kurjeg oka" data-en="Corn and callus treatment">Tretman žuljeva i kurjeg oka</span>
+              <i class="dots"></i><span class="value">2.500 <small>RSD</small></span>
+            </li>
+            <li class="price-row">
+              <span data-sr="Nega ispucalih peta" data-en="Cracked heel care">Nega ispucalih peta</span>
+              <i class="dots"></i><span class="value">2.500 <small>RSD</small></span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <p class="price-note reveal"
+         data-sr="Cene su informativne. Konačna cena se utvrđuje na konsultaciji, u zavisnosti od stanja noktiju i kože."
+         data-en="Prices are indicative. The final price is determined during the consultation, depending on the condition of your nails and skin.">Cene su informativne. Konačna cena se utvrđuje na konsultaciji, u zavisnosti od stanja noktiju i kože.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= KONTAKT ======================= -->
+<section id="contacts" class="page">
+  <div class="section">
+    <div class="container">
+      <div class="section-title reveal">
+        <p class="eyebrow" data-sr="Tu smo za vas" data-en="We are here for you">Tu smo za vas</p>
+        <h2 data-sr="Kontakt" data-en="Contact">Kontakt</h2>
+      </div>
+
+      <div class="contacts-grid">
+
+        <div class="contact-info reveal">
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            </div>
+            <div>
+              <h3 data-sr="Adresa" data-en="Address">Adresa</h3>
+              <p>Knez Mihailova 00<br>11000 Beograd, Srbija</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1.1 1A16 16 0 0 1 4 5.1 1 1 0 0 1 5 4z"/></svg>
+            </div>
+            <div>
+              <h3 data-sr="Telefon" data-en="Phone">Telefon</h3>
+              <p><a href="tel:+381600000000">+381 60 000 0000</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </div>
+            <div>
+              <h3 data-sr="E-mail" data-en="E-mail">E-mail</h3>
+              <p><a href="mailto:info@touchbeograd.rs">info@touchbeograd.rs</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <div>
+              <h3 data-sr="Radno vreme" data-en="Opening hours">Radno vreme</h3>
+              <p data-sr="Pon – Sub: 09:00 – 20:00" data-en="Mon – Sat: 9 am – 8 pm">Pon – Sub: 09:00 – 20:00</p>
+              <p class="muted" data-sr="Nedelja: zatvoreno" data-en="Sunday: closed">Nedelja: zatvoreno</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            </div>
+            <div>
+              <h3 data-sr="Društvene mreže" data-en="Social media">Društvene mreže</h3>
+              <p><a href="#" target="_blank" rel="noopener">Instagram: @touch.beograd</a></p>
+            </div>
+          </div>
+
+          <a href="tel:+381600000000" class="btn btn-primary btn-wide"
+             data-sr="Pozovi i zakaži" data-en="Call and book">Pozovi i zakaži</a>
+        </div>
+
+        <div class="contact-map reveal">
+          <span data-sr="Ovde ide Google mapa" data-en="Google map goes here">Ovde ide Google mapa</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+
+    <div class="footer-brand">
+      <span class="logo-mark">TOUCH</span>
+      <p data-sr="Estetska &amp; medicinska nega — Beograd" data-en="Aesthetic &amp; Medical care — Belgrade">Estetska &amp; medicinska nega — Beograd</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigacija">
+      <a href="#home"     data-nav="home"     data-sr="Početna"       data-en="Home">Početna</a>
+      <a href="#about"    data-nav="about"    data-sr="O nama"        data-en="About us">O nama</a>
+      <a href="#services" data-nav="services" data-sr="Usluge i cene" data-en="Services &amp; prices">Usluge i cene</a>
+      <a href="#contacts" data-nav="contacts" data-sr="Kontakt"       data-en="Contact">Kontakt</a>
+    </nav>
+
+    <div class="footer-contact">
+      <a href="tel:+381600000000">+381 60 000 0000</a>
+      <a href="mailto:info@touchbeograd.rs">info@touchbeograd.rs</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© <span id="year">2025</span> TOUCH Aesthetic &amp; Medical care.
+        <span data-sr="Sva prava zadržana." data-en="All rights reserved.">Sva prava zadržana.</span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---------- Странице ---------- */
+  var pages = document.querySelectorAll('.page');
+  var navLinks = document.querySelectorAll('.nav-link');
+  var nav = document.getElementById('nav');
+  var burger = document.getElementById('burger');
+  var header = document.getElementById('siteHeader');
+
+  function showPage(id) {
+    var found = false;
+    pages.forEach(function (p) {
+      var active = p.id === id;
+      p.classList.toggle('is-active', active);
+      if (active) found = true;
+    });
+    if (!found) return;
+
+    navLinks.forEach(function (l) {
+      l.classList.toggle('is-active', l.dataset.nav === id);
+    });
+
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    closeMenu();
+    requestAnimationFrame(revealOnScroll);
+  }
+
+  document.querySelectorAll('[data-nav]').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      showPage(el.dataset.nav);
+    });
+  });
+
+  /* ---------- Мобилни мени ---------- */
+  function closeMenu() {
+    nav.classList.remove('is-open');
+    burger.classList.remove('is-open');
+    burger.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('no-scroll');
+  }
+
+  burger.addEventListener('click', function () {
+    var open = nav.classList.toggle('is-open');
+    burger.classList.toggle('is-open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.body.classList.toggle('no-scroll', open);
+  });
+
+  /* ---------- Језик ---------- */
+  var langButtons = document.querySelectorAll('.lang-btn');
+
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll('[data-sr]').forEach(function (el) {
+      var value = el.dataset[lang];
+      if (value !== undefined) el.textContent = value;
+    });
+
+    langButtons.forEach(function (b) {
+      b.classList.toggle('is-active', b.dataset.lang === lang);
+    });
+
+    try { localStorage.setItem('touch-lang', lang); } catch (e) {}
+  }
+
+  langButtons.forEach(function (b) {
+    b.addEventListener('click', function () { setLang(b.dataset.lang); });
+  });
+
+  var saved = null;
+  try { saved = localStorage.getItem('touch-lang'); } catch (e) {}
+  if (saved === 'en') setLang('en');
+
+  /* ---------- Година ---------- */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ---------- Скролл-ефекти ---------- */
+  function onScroll() {
+    if (window.scrollY > 20) header.classList.add('is-scrolled');
+    else header.classList.remove('is-scrolled');
+    revealOnScroll();
+  }
+
+  var revealEls = document.querySelectorAll('.reveal');
+
+  function revealOnScroll() {
+    var vh = window.innerHeight;
+    revealEls.forEach(function (el) {
+      // Елементи у скривеним табовима не анимирају
+      if (!el.closest('.page.is-active')) return;
+      var rect = el.getBoundingClientRect();
+      if (rect.top < vh - 70) el.classList.add('is-visible');
+    });
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', revealOnScroll);
+
+  /* ---------- Почетно стање ---------- */
+  var hash = window.location.hash.replace('#', '');
+  if (hash && document.getElementById(hash) && document.getElementById(hash).classList.contains('page')) {
+    showPage(hash);
+  }
+
+  window.addEventListener('load', function () {
+    onScroll();
+    setTimeout(revealOnScroll, 120);
+  });
+  onScroll();
+})();
+</script>
+
+</body>
+</html>
