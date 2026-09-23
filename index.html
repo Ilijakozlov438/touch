@@ -4,35 +4,65 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TOUCH — Aesthetic &amp; Medical care | Beograd</title>
-<meta name="description" content="TOUCH Aesthetic & Medical care — manikir, pedikir i medicinski pedikir u istorijskom delu Beograda.">
+<meta name="description" content="TOUCH Aesthetic & Medical care — manikir, pedikir i medicinski pedikir. Braće Nedić 15, Beograd.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- ДЕКОРАТИВНИ ФОН -->
-<div class="bg-decor" aria-hidden="true">
-  <span class="blob blob-1"></span>
-  <span class="blob blob-2"></span>
-  <span class="blob blob-3"></span>
-</div>
 
 <!-- ======================= HEADER ======================= -->
 <header class="site-header" id="siteHeader">
   <div class="container header-inner">
 
-    <a href="#home" class="logo" data-nav="home">
-      <span class="logo-mark">TOUCH</span>
-      <span class="logo-sub" data-sr="Estetska &amp; medicinska nega" data-en="Aesthetic &amp; Medical care">Estetska &amp; medicinska nega</span>
+    <!-- LOGO (inline SVG, no external file needed) -->
+    <a href="#home" class="logo" data-nav="home" aria-label="TOUCH — Aesthetic & Medical care">
+      <svg class="logo-svg" viewBox="0 0 560 128" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+        <!-- Top caption -->
+        <text x="280" y="14" text-anchor="middle"
+              font-family="Montserrat, sans-serif" font-weight="600"
+              font-size="10" fill="#4FC3E8" letter-spacing="6">AESTHETIC &amp; MEDICAL CARE</text>
+
+        <!-- T -->
+        <text x="0" y="96" font-family="Montserrat, sans-serif"
+              font-weight="800" font-size="90" fill="#4FC3E8" letter-spacing="-1">T</text>
+
+        <!-- Circle "O" with hand + peony -->
+        <g transform="translate(60 12)">
+          <circle cx="42" cy="42" r="40" fill="#4FC3E8"/>
+          <!-- hand -->
+          <path d="M33 22 Q31 17 35 15 Q39 13 41 19 L46 33 L48 19 Q49 13 53 15 Q56 17 55 23 L52 36 L56 27 Q58 22 61 25 Q63 28 61 33 L56 45 Q50 56 41 56 Q32 56 26 46 L22 36 Q20 30 24 28 Q27 26 29 31 Z"
+                fill="#ffffff"/>
+          <!-- peony flower -->
+          <g transform="translate(42 66)">
+            <circle r="16" fill="#ffffff"/>
+            <path d="M0 -14 Q-7 -8 -7 0 Q-7 8 0 14 Q7 8 7 0 Q7 -8 0 -14Z" fill="#4FC3E8"/>
+            <path d="M-14 -7 Q-7 -3 0 0 Q-7 3 -14 7 Q-16 0 -14 -7Z" fill="#4FC3E8"/>
+            <path d="M14 -7 Q7 -3 0 0 Q7 3 14 7 Q16 0 14 -7Z" fill="#4FC3E8"/>
+            <path d="M-10 -11 Q-5 -5 0 0 Q-5 -2 -10 -5Z" fill="#4FC3E8"/>
+            <path d="M10 -11 Q5 -5 0 0 Q5 -2 10 -5Z" fill="#4FC3E8"/>
+            <circle r="4.5" fill="#4FC3E8"/>
+          </g>
+        </g>
+
+        <!-- UCH -->
+        <text x="152" y="96" font-family="Montserrat, sans-serif"
+              font-weight="800" font-size="90" fill="#4FC3E8" letter-spacing="-1">UCH</text>
+
+        <!-- Bottom line + byline -->
+        <line x1="0" y1="112" x2="474" y2="112" stroke="#4FC3E8" stroke-width="1.5"/>
+        <text x="482" y="117" font-family="Montserrat, sans-serif"
+              font-weight="500" font-size="12" fill="#4FC3E8" letter-spacing="1">by Celtis Pharm</text>
+      </svg>
     </a>
 
     <nav class="nav" id="nav" aria-label="Glavna navigacija">
       <a href="#home"     class="nav-link is-active" data-nav="home"     data-sr="Početna"       data-en="Home">Početna</a>
       <a href="#about"    class="nav-link"           data-nav="about"    data-sr="O nama"        data-en="About us">O nama</a>
       <a href="#services" class="nav-link"           data-nav="services" data-sr="Usluge i cene" data-en="Services &amp; prices">Usluge i cene</a>
+      <a href="#reviews"  class="nav-link"           data-nav="reviews"  data-sr="Recenzije"     data-en="Reviews">Recenzije</a>
       <a href="#contacts" class="nav-link"           data-nav="contacts" data-sr="Kontakt"       data-en="Contact">Kontakt</a>
     </nav>
 
@@ -42,8 +72,9 @@
         <button type="button" class="lang-btn" data-lang="en">EN</button>
       </div>
 
-      <a href="#contacts" class="btn btn-mini" data-nav="contacts"
-         data-sr="Zakaži" data-en="Book">Zakaži</a>
+      <a href="https://www.sredime.rs/widget/touch-aestheticmedical-care"
+         target="_blank" rel="noopener" class="btn btn-mini"
+         data-sr="Zakaži online" data-en="Book online">Zakaži online</a>
 
       <button type="button" class="burger" id="burger" aria-label="Meni" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -71,11 +102,12 @@
         </h1>
 
         <p class="hero-tagline reveal"
-           data-sr="Sa ljubavlju i pažnjom prema svakom klijentu."
-           data-en="With love and care for every client.">Sa ljubavlju i pažnjom prema svakom klijentu.</p>
+           data-sr="Sa ljubavlju za svakog klijenta."
+           data-en="With love for every client.">Sa ljubavlju za svakog klijenta.</p>
 
         <div class="hero-actions reveal">
-          <a href="#contacts" class="btn btn-primary" data-nav="contacts"
+          <a href="https://www.sredime.rs/widget/touch-aestheticmedical-care"
+             target="_blank" rel="noopener" class="btn btn-primary"
              data-sr="Zakaži termin" data-en="Book an appointment">Zakaži termin</a>
           <a href="#services" class="btn btn-ghost" data-nav="services"
              data-sr="Pogledaj cene" data-en="View prices">Pogledaj cene</a>
@@ -83,16 +115,16 @@
 
         <ul class="hero-stats reveal">
           <li>
-            <strong>1000+</strong>
-            <span data-sr="zadovoljnih klijenata" data-en="happy clients">zadovoljnih klijenata</span>
-          </li>
-          <li>
-            <strong>5★</strong>
-            <span data-sr="prosečna ocena" data-en="average rating">prosečna ocena</span>
+            <strong>10/10</strong>
+            <span data-sr="ocene klijenata" data-en="client ratings">ocene klijenata</span>
           </li>
           <li>
             <strong>100%</strong>
             <span data-sr="sterilni instrumenti" data-en="sterile instruments">sterilni instrumenti</span>
+          </li>
+          <li>
+            <strong>6/7</strong>
+            <span data-sr="dana u nedelji" data-en="days a week">dana u nedelji</span>
           </li>
         </ul>
       </div>
@@ -100,12 +132,11 @@
       <div class="hero-visual reveal">
         <div class="hero-card">
           <div class="hero-card-inner">
-            <span class="hero-card-label" data-sr="TOUCH salon" data-en="TOUCH salon">TOUCH salon</span>
-            <p class="hero-card-quote" data-sr="„Sve počinje dodirom“" data-en="“Everything begins with a touch”">„Sve počinje dodirom“</p>
+            <span class="hero-card-label" data-sr="TOUCH studio" data-en="TOUCH studio">TOUCH studio</span>
+            <p class="hero-card-quote" data-sr="„Lepota počinje dodirom“" data-en="“Beauty begins with a touch”">„Lepota počinje dodirom“</p>
             <div class="hero-card-line"></div>
-            <span class="hero-card-loc" data-sr="Beograd · Centar" data-en="Belgrade · Center">Beograd · Centar</span>
+            <span class="hero-card-loc">Beograd · Braće Nedić 15</span>
           </div>
-          <div class="hero-card-ring"></div>
         </div>
       </div>
 
@@ -124,8 +155,8 @@
 
         <article class="feature reveal">
           <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"
-                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"
+                 stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 3l7 3v6c0 4.2-2.9 7.7-7 9-4.1-1.3-7-4.8-7-9V6l7-3z"/>
               <path d="M9 12l2 2 4-4"/>
             </svg>
@@ -138,8 +169,8 @@
 
         <article class="feature reveal">
           <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"
-                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"
+                 stroke-linecap="round" stroke-linejoin="round">
               <path d="M20.5 3.5C11 4 5.5 9 5.5 15.5c0 2.8 2.2 5 5 5 7 0 10-7.5 10-17z"/>
               <path d="M4 20.5c2-5.5 5.5-9.5 10-12"/>
             </svg>
@@ -152,8 +183,8 @@
 
         <article class="feature reveal">
           <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"
-                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"
+                 stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 20s-7-4.4-7-9.4A4.1 4.1 0 0 1 12 7.6a4.1 4.1 0 0 1 7 3c0 5-7 9.4-7 9.4z"/>
             </svg>
           </div>
@@ -188,76 +219,34 @@
       <div class="section-title reveal">
         <p class="eyebrow" data-sr="Upoznajte nas" data-en="Meet us">Upoznajte nas</p>
         <h2 data-sr="Naš tim" data-en="Our team">Naš tim</h2>
-        <p class="slogan" data-sr="Sve počinje dodirom" data-en="Everything begins with a touch">Sve počinje dodirom</p>
+        <p class="slogan" data-sr="Lepota u detaljima. Nega u svakom dodiru."
+           data-en="Beauty in the details. Care in every touch.">Lepota u detaljima. Nega u svakom dodiru.</p>
       </div>
 
       <div class="team">
 
         <article class="master reveal">
           <div class="photo">
-            <span data-sr="Foto" data-en="Photo">Foto</span>
+            <!-- Zamenite: <img src="images/ksenia.jpg" alt="Master Ksenia"> -->
+            <span data-sr="Foto · Ksenia" data-en="Photo · Ksenia">Foto · Ksenia</span>
           </div>
           <div class="master-info">
-            <h3 data-sr="Ime majstora" data-en="Master's name">Ime majstora</h3>
+            <h3 data-sr="Master Ksenia" data-en="Master Ksenia">Master Ksenia</h3>
             <p data-sr="Manikir &amp; pedikir" data-en="Manicure &amp; pedicure">Manikir &amp; pedikir</p>
           </div>
         </article>
 
         <article class="master reveal">
           <div class="photo">
-            <span data-sr="Foto" data-en="Photo">Foto</span>
+            <!-- Zamenite: <img src="images/ekaterina.jpg" alt="Master Ekaterina"> -->
+            <span data-sr="Foto · Ekaterina" data-en="Photo · Ekaterina">Foto · Ekaterina</span>
           </div>
           <div class="master-info">
-            <h3 data-sr="Ime majstora" data-en="Master's name">Ime majstora</h3>
+            <h3 data-sr="Master Ekaterina" data-en="Master Ekaterina">Master Ekaterina</h3>
             <p data-sr="Medicinski pedikir" data-en="Medical pedicure">Medicinski pedikir</p>
           </div>
         </article>
 
-        <article class="master reveal">
-          <div class="photo">
-            <span data-sr="Foto" data-en="Photo">Foto</span>
-          </div>
-          <div class="master-info">
-            <h3 data-sr="Ime majstora" data-en="Master's name">Ime majstora</h3>
-            <p data-sr="Produžavanje noktiju" data-en="Nail extensions">Produžavanje noktiju</p>
-          </div>
-        </article>
-
-        <article class="master reveal">
-          <div class="photo">
-            <span data-sr="Foto" data-en="Photo">Foto</span>
-          </div>
-          <div class="master-info">
-            <h3 data-sr="Ime majstora" data-en="Master's name">Ime majstora</h3>
-            <p data-sr="Nega noktiju i kože" data-en="Nail and skin care">Nega noktiju i kože</p>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- RECENZIJE -->
-  <div class="section section-alt">
-    <div class="container">
-      <div class="section-title reveal">
-        <p class="eyebrow" data-sr="Poverenje klijenata" data-en="Client trust">Poverenje klijenata</p>
-        <h2 data-sr="Recenzije" data-en="Reviews">Recenzije</h2>
-      </div>
-
-      <div class="reviews">
-        <div class="review-slot reveal">
-          <span class="review-quote">„</span>
-          <p data-sr="Mesto za screenshot recenzije" data-en="Place for a review screenshot">Mesto za screenshot recenzije</p>
-        </div>
-        <div class="review-slot reveal">
-          <span class="review-quote">„</span>
-          <p data-sr="Mesto za screenshot recenzije" data-en="Place for a review screenshot">Mesto za screenshot recenzije</p>
-        </div>
-        <div class="review-slot reveal">
-          <span class="review-quote">„</span>
-          <p data-sr="Mesto za screenshot recenzije" data-en="Place for a review screenshot">Mesto za screenshot recenzije</p>
-        </div>
       </div>
     </div>
   </div>
@@ -285,22 +274,29 @@
 
         <div class="about-text reveal">
           <h3 class="about-welcome"
-              data-sr="Dobrodošli u naš salon TOUCH u istorijskom delu Beograda."
-              data-en="Welcome to our TOUCH salon in the historic part of Belgrade.">Dobrodošli u naš salon TOUCH u istorijskom delu Beograda.</h3>
+              data-sr="Dobrodošli u TOUCH — mesto lepote, nege i profesionalne brige o vašim rukama i nogama."
+              data-en="Welcome to TOUCH — a place of beauty, care and professional attention for your hands and feet.">Dobrodošli u TOUCH — mesto lepote, nege i profesionalne brige o vašim rukama i nogama.</h3>
 
-          <p data-sr="TOUCH je mesto gde se estetska nega i medicinski pristup spajaju u jednu celinu. Naš cilj je zdravlje i lepota vaših noktiju i kože — bez kompromisa."
-             data-en="TOUCH is a place where aesthetic care and a medical approach come together as one. Our goal is the health and beauty of your nails and skin — without compromise.">TOUCH je mesto gde se estetska nega i medicinski pristup spajaju u jednu celinu. Naš cilj je zdravlje i lepota vaših noktiju i kože — bez kompromisa.</p>
+          <p data-sr="Napravili smo mesto gde možete da zastanete, posvetite vreme sebi i poverite svoju lepotu profesionalcima. Za nas je važan svaki detalj: kvalitet rada, bezbednost, sterilnost instrumenata, komfor i individualni pristup svakom klijentu."
+             data-en="We created a place where you can pause, take time for yourself and entrust your beauty to professionals. Every detail matters to us: quality of work, safety, sterility of instruments, comfort and an individual approach to each client.">Napravili smo mesto gde možete da zastanete, posvetite vreme sebi i poverite svoju lepotu profesionalcima. Za nas je važan svaki detalj: kvalitet rada, bezbednost, sterilnost instrumenata, komfor i individualni pristup svakom klijentu.</p>
 
-          <p data-sr="Radimo isključivo sa sterilnim instrumentima i kvalitetnim materijalima, a svakoj klijentkinji posvećujemo vreme koje joj je potrebno. Ne radimo u žurbi i ne koristimo univerzalna rešenja."
-             data-en="We work only with sterile instruments and quality materials, and we give every client the time she needs. We do not rush and we do not use one-size-fits-all solutions.">Radimo isključivo sa sterilnim instrumentima i kvalitetnim materijalima, a svakoj klijentkinji posvećujemo vreme koje joj je potrebno. Ne radimo u žurbi i ne koristimo univerzalna rešenja.</p>
+          <p data-sr="U TOUCH-u nudimo profesionalni manikir, pedikir i medicinski pedikir, kombinujući savremene tehnike, kvalitetne materijale i pažljiv odnos prema potrebama svakog klijenta."
+             data-en="At TOUCH we offer professional manicure, pedicure and medical pedicure, combining modern techniques, quality materials and a careful attitude towards the needs of each client.">U TOUCH-u nudimo profesionalni manikir, pedikir i medicinski pedikir, kombinujući savremene tehnike, kvalitetne materijale i pažljiv odnos prema potrebama svakog klijenta.</p>
 
-          <ul class="about-list">
-            <li data-sr="Manikir i pedikir najvišeg kvaliteta" data-en="Manicure and pedicure of the highest quality">Manikir i pedikir najvišeg kvaliteta</li>
-            <li data-sr="Medicinski pedikir i nega problematičnih noktiju" data-en="Medical pedicure and care for problematic nails">Medicinski pedikir i nega problematičnih noktiju</li>
-            <li data-sr="Individualan pristup i pažnja prema detaljima" data-en="Individual approach and attention to detail">Individualan pristup i pažnja prema detaljima</li>
-          </ul>
+          <p data-sr="Verujemo da prava lepota nije samo besprekoran rezultat. To je i osećaj samopouzdanja, lakoće i zadovoljstva koji dolazi iz brige o sebi."
+             data-en="We believe that true beauty is not only a flawless result. It is also the feeling of confidence, ease and satisfaction that comes from caring for yourself.">Verujemo da prava lepota nije samo besprekoran rezultat. To je i osećaj samopouzdanja, lakoće i zadovoljstva koji dolazi iz brige o sebi.</p>
 
-          <a href="#contacts" class="btn btn-primary" data-nav="contacts"
+          <p class="about-signature"
+             data-sr="TOUCH — mesto gde se profesionalizam spaja sa pažnjom, a lepota počinje dodirom."
+             data-en="TOUCH — a place where professionalism meets care, and beauty begins with a touch.">TOUCH — mesto gde se profesionalizam spaja sa pažnjom, a lepota počinje dodirom.</p>
+
+          <p class="about-owner">
+            <span class="dash">—</span>
+            <span data-sr="Svetlana, vlasnica studija TOUCH" data-en="Svetlana, owner of TOUCH studio">Svetlana, vlasnica studija TOUCH</span>
+          </p>
+
+          <a href="https://www.sredime.rs/widget/touch-aestheticmedical-care"
+             target="_blank" rel="noopener" class="btn btn-primary"
              data-sr="Zakaži termin" data-en="Book an appointment">Zakaži termin</a>
         </div>
 
@@ -320,6 +316,7 @@
 
       <div class="price-groups">
 
+        <!-- MANIKIR -->
         <div class="price-card reveal">
           <div class="price-card-head">
             <h3 data-sr="Manikir" data-en="Manicure">Manikir</h3>
@@ -327,28 +324,14 @@
           </div>
           <ul>
             <li class="price-row">
-              <span data-sr="Klasični manikir" data-en="Classic manicure">Klasični manikir</span>
-              <i class="dots"></i><span class="value">2.000 <small>RSD</small></span>
-            </li>
-            <li class="price-row">
-              <span data-sr="Manikir sa gel lakom" data-en="Manicure with gel polish">Manikir sa gel lakom</span>
-              <i class="dots"></i><span class="value">3.000 <small>RSD</small></span>
-            </li>
-            <li class="price-row">
-              <span data-sr="Produžavanje noktiju gelom" data-en="Gel nail extensions">Produžavanje noktiju gelom</span>
-              <i class="dots"></i><span class="value">4.500 <small>RSD</small></span>
-            </li>
-            <li class="price-row">
-              <span data-sr="Korekcija produženih noktiju" data-en="Extension refill">Korekcija produženih noktiju</span>
-              <i class="dots"></i><span class="value">3.500 <small>RSD</small></span>
-            </li>
-            <li class="price-row">
-              <span data-sr="Skidanje gel laka" data-en="Gel polish removal">Skidanje gel laka</span>
-              <i class="dots"></i><span class="value">800 <small>RSD</small></span>
+              <span data-sr="Manikir" data-en="Manicure">Manikir</span>
+              <i class="dots"></i>
+              <span class="value">2.000 <small>RSD</small></span>
             </li>
           </ul>
         </div>
 
+        <!-- PEDIKIR -->
         <div class="price-card reveal">
           <div class="price-card-head">
             <h3 data-sr="Pedikir" data-en="Pedicure">Pedikir</h3>
@@ -356,20 +339,67 @@
           </div>
           <ul>
             <li class="price-row">
-              <span data-sr="Klasični pedikir" data-en="Classic pedicure">Klasični pedikir</span>
+              <span data-sr="Estetski pedikir (samo prsti)" data-en="Aesthetic pedicure (toes only)">Estetski pedikir (samo prsti)</span>
               <i class="dots"></i><span class="value">2.500 <small>RSD</small></span>
             </li>
             <li class="price-row">
-              <span data-sr="Pedikir sa gel lakom" data-en="Pedicure with gel polish">Pedikir sa gel lakom</span>
+              <span data-sr="Estetski pedikir + obični lak" data-en="Aesthetic pedicure + regular polish">Estetski pedikir + obični lak</span>
+              <i class="dots"></i><span class="value">2.700 <small>RSD</small></span>
+            </li>
+            <li class="price-row">
+              <span data-sr="Estetski pedikir + gel lak" data-en="Aesthetic pedicure + gel polish">Estetski pedikir + gel lak</span>
               <i class="dots"></i><span class="value">3.500 <small>RSD</small></span>
             </li>
             <li class="price-row">
-              <span data-sr="Paket: manikir + pedikir" data-en="Package: manicure + pedicure">Paket: manikir + pedikir</span>
-              <i class="dots"></i><span class="value">4.500 <small>RSD</small></span>
+              <span data-sr="Estetski japanski pedikir (samo prsti)" data-en="Aesthetic Japanese pedicure (toes only)">Estetski japanski pedikir (samo prsti)</span>
+              <i class="dots"></i><span class="value">3.000 <small>RSD</small></span>
+            </li>
+            <li class="price-row">
+              <span data-sr="Smart pedikir / higijenski mokri bez premaza" data-en="Smart pedicure / hygienic wet, no coating">Smart pedikir / higijenski mokri bez premaza</span>
+              <i class="dots"></i><span class="value">3.800 <small>RSD</small></span>
+            </li>
+            <li class="price-row">
+              <span data-sr="Smart / higijenski mokri + obični lak" data-en="Smart / hygienic wet + regular polish">Smart / higijenski mokri + obični lak</span>
+              <i class="dots"></i><span class="value">4.000 <small>RSD</small></span>
+            </li>
+            <li class="price-row">
+              <span data-sr="Smart / higijenski mokri + bazni premaz" data-en="Smart / hygienic wet + base coat">Smart / higijenski mokri + bazni premaz</span>
+              <i class="dots"></i><span class="value">4.300 <small>RSD</small></span>
+            </li>
+            <li class="price-row">
+              <span data-sr="Smart / higijenski mokri japanski pedikir" data-en="Smart / hygienic wet Japanese pedicure">Smart / higijenski mokri japanski pedikir</span>
+              <i class="dots"></i><span class="value">4.000 <small>RSD</small></span>
             </li>
           </ul>
         </div>
 
+        <!-- DODATNO -->
+        <div class="price-card reveal">
+          <div class="price-card-head">
+            <h3 data-sr="Dodatno" data-en="Additional">Dodatno</h3>
+            <span class="price-card-icon">✦</span>
+          </div>
+          <ul>
+            <li class="price-row">
+              <span data-sr="Parafinoterapija" data-en="Paraffin therapy">Parafinoterapija</span>
+              <i class="dots"></i><span class="value">1.000 <small>RSD</small></span>
+            </li>
+            <li class="price-row">
+              <span data-sr="Lagani dizajn" data-en="Light design">Lagani dizajn</span>
+              <i class="dots"></i><span class="value">500 <small>RSD</small></span>
+            </li>
+            <li class="price-row">
+              <span data-sr="Srednji dizajn" data-en="Medium design">Srednji dizajn</span>
+              <i class="dots"></i><span class="value">1.000 <small>RSD</small></span>
+            </li>
+            <li class="price-row">
+              <span data-sr="Složeni dizajn" data-en="Complex design">Složeni dizajn</span>
+              <i class="dots"></i><span class="value">2.000 <small>RSD</small></span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- MEDICINSKI PEDIKIR -->
         <div class="price-card price-card-featured reveal">
           <span class="price-card-tag" data-sr="Preporučeno" data-en="Recommended">Preporučeno</span>
           <div class="price-card-head">
@@ -378,24 +408,28 @@
           </div>
           <ul>
             <li class="price-row">
-              <span data-sr="Medicinski pedikir — delimični" data-en="Medical pedicure — partial">Medicinski pedikir — delimični</span>
-              <i class="dots"></i><span class="value">3.000 <small>RSD</small></span>
+              <span data-sr="Problematičan nokat + šišanje noktiju" data-en="Problematic nail + nail trimming">Problematičan nokat + šišanje noktiju</span>
+              <i class="dots"></i><span class="value">1.500 <small>RSD</small></span>
             </li>
             <li class="price-row">
-              <span data-sr="Medicinski pedikir — kompletan" data-en="Medical pedicure — full">Medicinski pedikir — kompletan</span>
-              <i class="dots"></i><span class="value">4.500 <small>RSD</small></span>
+              <span data-sr="Problematično stopalo" data-en="Problematic foot">Problematično stopalo</span>
+              <i class="dots"></i><span class="value">1.500 <small>RSD</small></span>
             </li>
             <li class="price-row">
-              <span data-sr="Tretman uraslog nokta" data-en="Ingrown nail treatment">Tretman uraslog nokta</span>
-              <i class="dots"></i><span class="value">3.500 <small>RSD</small></span>
+              <span data-sr="Higijenski medicinski pedikir (samo nokti)" data-en="Hygienic medical pedicure (nails only)">Higijenski medicinski pedikir (samo nokti)</span>
+              <i class="dots"></i><span class="value">2.800 <small>RSD</small></span>
             </li>
             <li class="price-row">
-              <span data-sr="Tretman žuljeva i kurjeg oka" data-en="Corn and callus treatment">Tretman žuljeva i kurjeg oka</span>
-              <i class="dots"></i><span class="value">2.500 <small>RSD</small></span>
+              <span data-sr="Higijenski složeni medicinski pedikir" data-en="Hygienic complex medical pedicure">Higijenski složeni medicinski pedikir</span>
+              <i class="dots"></i><span class="value">3.300 <small>RSD</small></span>
             </li>
             <li class="price-row">
-              <span data-sr="Nega ispucalih peta" data-en="Cracked heel care">Nega ispucalih peta</span>
-              <i class="dots"></i><span class="value">2.500 <small>RSD</small></span>
+              <span data-sr="Puni medicinski pedikir" data-en="Full medical pedicure">Puni medicinski pedikir</span>
+              <i class="dots"></i><span class="value">4.000 <small>RSD</small></span>
+            </li>
+            <li class="price-row">
+              <span data-sr="Puni složeni medicinski pedikir" data-en="Full complex medical pedicure">Puni složeni medicinski pedikir</span>
+              <i class="dots"></i><span class="value">4.500–6.000 <small>RSD</small></span>
             </li>
           </ul>
         </div>
@@ -405,6 +439,75 @@
       <p class="price-note reveal"
          data-sr="Cene su informativne. Konačna cena se utvrđuje na konsultaciji, u zavisnosti od stanja noktiju i kože."
          data-en="Prices are indicative. The final price is determined during the consultation, depending on the condition of your nails and skin.">Cene su informativne. Konačna cena se utvrđuje na konsultaciji, u zavisnosti od stanja noktiju i kože.</p>
+
+      <div class="price-cta reveal">
+        <a href="https://www.sredime.rs/widget/touch-aestheticmedical-care"
+           target="_blank" rel="noopener" class="btn btn-primary"
+           data-sr="Zakaži online" data-en="Book online">Zakaži online</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= RECENZIJE ======================= -->
+<section id="reviews" class="page">
+  <div class="section">
+    <div class="container">
+      <div class="section-title reveal">
+        <p class="eyebrow" data-sr="Poverenje klijenata" data-en="Client trust">Poverenje klijenata</p>
+        <h2 data-sr="Recenzije" data-en="Reviews">Recenzije</h2>
+      </div>
+
+      <div class="reviews">
+
+        <article class="review-card reveal">
+          <div class="review-head">
+            <div class="review-avatar">V</div>
+            <div>
+              <h3>Verica</h3>
+              <p data-sr="Medicinski pedikir — složen" data-en="Medical pedicure — complex">Medicinski pedikir — složen</p>
+            </div>
+            <div class="review-score">10</div>
+          </div>
+          <div class="review-ratings">
+            <span><b data-sr="Usluga" data-en="Service">Usluga</b> 10</span>
+            <span><b data-sr="Cena / kvalitet" data-en="Price / quality">Cena / kvalitet</b> 10</span>
+            <span><b data-sr="Higijena" data-en="Hygiene">Higijena</b> 10</span>
+            <span><b data-sr="Ambijent" data-en="Ambience">Ambijent</b> 10</span>
+          </div>
+          <p class="review-text"
+             data-sr="Hvala na temeljnoj, stručnoj i bezbolnoj usluzi u prijatnom ambijentu! Jako ste ljubazni."
+             data-en="Thank you for the thorough, professional and painless service in a pleasant ambience! You are very kind.">Hvala na temeljnoj, stručnoj i bezbolnoj usluzi u prijatnom ambijentu! Jako ste ljubazni.</p>
+          <div class="review-stars">★ ★ ★ ★ ★</div>
+        </article>
+
+        <article class="review-card reveal">
+          <div class="review-head">
+            <div class="review-avatar">★</div>
+            <div>
+              <h3 data-sr="Zadovoljna klijentkinja" data-en="Happy client">Zadovoljna klijentkinja</h3>
+              <p data-sr="Manikir" data-en="Manicure">Manikir</p>
+            </div>
+            <div class="review-score">10</div>
+          </div>
+          <p class="review-text review-text-lang">Amazing service :))) will come again for sure</p>
+          <div class="review-stars">★ ★ ★ ★ ★</div>
+        </article>
+
+        <article class="review-card reveal">
+          <div class="review-head">
+            <div class="review-avatar">★</div>
+            <div>
+              <h3 data-sr="Zadovoljna klijentkinja" data-en="Happy client">Zadovoljna klijentkinja</h3>
+              <p data-sr="Pedikir" data-en="Pedicure">Pedikir</p>
+            </div>
+            <div class="review-score">10</div>
+          </div>
+          <p class="review-text review-text-lang">Great place. Clean, professional. Very happy with the service.</p>
+          <div class="review-stars">★ ★ ★ ★ ★</div>
+        </article>
+
+      </div>
     </div>
   </div>
 </section>
@@ -424,61 +527,77 @@
 
           <div class="contact-item">
             <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
             </div>
             <div>
               <h3 data-sr="Adresa" data-en="Address">Adresa</h3>
-              <p>Knez Mihailova 00<br>11000 Beograd, Srbija</p>
+              <p>Braće Nedić 15<br>Beograd, Srbija</p>
+              <p class="muted">
+                <a href="https://maps.app.goo.gl/vqXpCLNVDVSMUVXD6" target="_blank" rel="noopener"
+                   data-sr="Otvori u Google mapama →" data-en="Open in Google Maps →">Otvori u Google mapama →</a>
+              </p>
             </div>
           </div>
 
           <div class="contact-item">
             <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1.1 1A16 16 0 0 1 4 5.1 1 1 0 0 1 5 4z"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1.1 1A16 16 0 0 1 4 5.1 1 1 0 0 1 5 4z"/></svg>
             </div>
             <div>
               <h3 data-sr="Telefon" data-en="Phone">Telefon</h3>
-              <p><a href="tel:+381600000000">+381 60 000 0000</a></p>
+              <p><a href="tel:+381691013246">+381 69 101 3246</a></p>
             </div>
           </div>
 
           <div class="contact-item">
             <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
             </div>
             <div>
               <h3 data-sr="E-mail" data-en="E-mail">E-mail</h3>
-              <p><a href="mailto:info@touchbeograd.rs">info@touchbeograd.rs</a></p>
+              <p><a href="mailto:touchbeograd@gmail.com">touchbeograd@gmail.com</a></p>
             </div>
           </div>
 
           <div class="contact-item">
             <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
             </div>
             <div>
               <h3 data-sr="Radno vreme" data-en="Opening hours">Radno vreme</h3>
-              <p data-sr="Pon – Sub: 09:00 – 20:00" data-en="Mon – Sat: 9 am – 8 pm">Pon – Sub: 09:00 – 20:00</p>
+              <p data-sr="Ponedeljak – subota: 10:00 – 20:00" data-en="Monday – Saturday: 10 am – 8 pm">Ponedeljak – subota: 10:00 – 20:00</p>
               <p class="muted" data-sr="Nedelja: zatvoreno" data-en="Sunday: closed">Nedelja: zatvoreno</p>
             </div>
           </div>
 
           <div class="contact-item">
             <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
             </div>
             <div>
               <h3 data-sr="Društvene mreže" data-en="Social media">Društvene mreže</h3>
-              <p><a href="#" target="_blank" rel="noopener">Instagram: @touch.beograd</a></p>
+              <p>
+                <a href="https://www.instagram.com/touch_beograd" target="_blank" rel="noopener">Instagram: @touch_beograd</a><br>
+                <a href="https://www.facebook.com/share/1D9jKhrSRG/" target="_blank" rel="noopener">Facebook: TOUCH Beograd</a>
+              </p>
             </div>
           </div>
 
-          <a href="tel:+381600000000" class="btn btn-primary btn-wide"
-             data-sr="Pozovi i zakaži" data-en="Call and book">Pozovi i zakaži</a>
+          <a href="https://www.sredime.rs/widget/touch-aestheticmedical-care"
+             target="_blank" rel="noopener" class="btn btn-primary btn-wide"
+             data-sr="Zakaži online" data-en="Book online">Zakaži online</a>
+
+          <a href="tel:+381691013246" class="btn btn-ghost btn-wide"
+             data-sr="Pozovi: 069 101 3246" data-en="Call: 069 101 3246">Pozovi: 069 101 3246</a>
         </div>
 
         <div class="contact-map reveal">
-          <span data-sr="Ovde ide Google mapa" data-en="Google map goes here">Ovde ide Google mapa</span>
+          <iframe
+            src="https://www.google.com/maps?q=Bra%C4%87e%20Nedi%C4%87%2015%2C%20Beograd&output=embed"
+            title="TOUCH — Braće Nedić 15, Beograd"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
         </div>
 
       </div>
@@ -493,7 +612,30 @@
   <div class="container footer-inner">
 
     <div class="footer-brand">
-      <span class="logo-mark">TOUCH</span>
+      <svg class="logo-svg logo-svg-footer" viewBox="0 0 560 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <text x="280" y="14" text-anchor="middle"
+              font-family="Montserrat, sans-serif" font-weight="600"
+              font-size="10" fill="#ffffff" letter-spacing="6">AESTHETIC &amp; MEDICAL CARE</text>
+        <text x="0" y="96" font-family="Montserrat, sans-serif"
+              font-weight="800" font-size="90" fill="#ffffff" letter-spacing="-1">T</text>
+        <g transform="translate(60 12)">
+          <circle cx="42" cy="42" r="40" fill="#ffffff"/>
+          <path d="M33 22 Q31 17 35 15 Q39 13 41 19 L46 33 L48 19 Q49 13 53 15 Q56 17 55 23 L52 36 L56 27 Q58 22 61 25 Q63 28 61 33 L56 45 Q50 56 41 56 Q32 56 26 46 L22 36 Q20 30 24 28 Q27 26 29 31 Z" fill="#4FC3E8"/>
+          <g transform="translate(42 66)">
+            <circle r="16" fill="#4FC3E8"/>
+            <path d="M0 -14 Q-7 -8 -7 0 Q-7 8 0 14 Q7 8 7 0 Q7 -8 0 -14Z" fill="#ffffff"/>
+            <path d="M-14 -7 Q-7 -3 0 0 Q-7 3 -14 7 Q-16 0 -14 -7Z" fill="#ffffff"/>
+            <path d="M14 -7 Q7 -3 0 0 Q7 3 14 7 Q16 0 14 -7Z" fill="#ffffff"/>
+            <circle r="4.5" fill="#ffffff"/>
+          </g>
+        </g>
+        <text x="152" y="96" font-family="Montserrat, sans-serif"
+              font-weight="800" font-size="90" fill="#ffffff" letter-spacing="-1">UCH</text>
+        <line x1="0" y1="112" x2="474" y2="112" stroke="#ffffff" stroke-width="1.5"/>
+        <text x="482" y="117" font-family="Montserrat, sans-serif"
+              font-weight="500" font-size="12" fill="#ffffff" letter-spacing="1">by Celtis Pharm</text>
+      </svg>
+
       <p data-sr="Estetska &amp; medicinska nega — Beograd" data-en="Aesthetic &amp; Medical care — Belgrade">Estetska &amp; medicinska nega — Beograd</p>
     </div>
 
@@ -501,12 +643,15 @@
       <a href="#home"     data-nav="home"     data-sr="Početna"       data-en="Home">Početna</a>
       <a href="#about"    data-nav="about"    data-sr="O nama"        data-en="About us">O nama</a>
       <a href="#services" data-nav="services" data-sr="Usluge i cene" data-en="Services &amp; prices">Usluge i cene</a>
+      <a href="#reviews"  data-nav="reviews"  data-sr="Recenzije"     data-en="Reviews">Recenzije</a>
       <a href="#contacts" data-nav="contacts" data-sr="Kontakt"       data-en="Contact">Kontakt</a>
     </nav>
 
     <div class="footer-contact">
-      <a href="tel:+381600000000">+381 60 000 0000</a>
-      <a href="mailto:info@touchbeograd.rs">info@touchbeograd.rs</a>
+      <a href="tel:+381691013246">+381 69 101 3246</a>
+      <a href="mailto:touchbeograd@gmail.com">touchbeograd@gmail.com</a>
+      <p class="footer-addr">Braće Nedić 15, Beograd</p>
+      <p class="footer-hours" data-sr="Pon – Sub: 10:00 – 20:00" data-en="Mon – Sat: 10 am – 8 pm">Pon – Sub: 10:00 – 20:00</p>
     </div>
 
   </div>
@@ -613,7 +758,6 @@
   function revealOnScroll() {
     var vh = window.innerHeight;
     revealEls.forEach(function (el) {
-      // Елементи у скривеним табовима не анимирају
       if (!el.closest('.page.is-active')) return;
       var rect = el.getBoundingClientRect();
       if (rect.top < vh - 70) el.classList.add('is-visible');
@@ -623,7 +767,7 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', revealOnScroll);
 
-  /* ---------- Почетно стање ---------- */
+  /* ---------- Почетна рута ---------- */
   var hash = window.location.hash.replace('#', '');
   if (hash && document.getElementById(hash) && document.getElementById(hash).classList.contains('page')) {
     showPage(hash);
