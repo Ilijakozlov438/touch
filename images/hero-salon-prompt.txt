@@ -1,0 +1,6 @@
+Use case: lighting-weather / photographic retouch.
+Asset type: real salon photo for the right-hand image of a manicure salon website hero.
+Edit target: the attached slika4.png, the actual TOUCH salon interior. Produce a polished photographic edit of THIS room, not a redesign or an imagined salon.
+Improve natural daylight exposure, balance white tones, gently lift shadows, reduce the slightly gray cast and give clean, refined detail. Keep bright whites, very subtle ice-blue ambience and the existing blue accents. Realistic professional interior photography, soft daylight, restrained contrast, no heavy HDR, no artificial glow.
+Composition: portrait 4:5 crop suitable for a 460px-wide website hero. Crop away some empty ceiling and floor while retaining the manicure workstation and lamps on the left and the white chairs with the blue cushions toward the right foreground. Keep vertical architectural lines natural and straight.
+Preserve the actual equipment, chairs, cushions, table, window, materials, shapes, proportions and layout; do not invent, add, move or replace furniture, plants, decoration, products or people. Preserve the blue cushion texture. No text, logo, watermark, borders or UI. Output only the finished photograph.

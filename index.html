@@ -91,10 +91,14 @@
 
       <div class="hero-visual reveal">
         <div class="hero-card">
+          <img class="hero-photo" src="images/hero-salon.webp" width="1000" height="1250"
+               alt="Svetao enterijer TOUCH salona sa radnim mestima za manikir"
+               data-sr-alt="Svetao enterijer TOUCH salona sa radnim mestima za manikir"
+               data-en-alt="Bright TOUCH salon interior with manicure workstations"
+               fetchpriority="high" decoding="async">
           <div class="hero-card-inner">
             <span class="hero-card-label" data-sr="TOUCH studio" data-en="TOUCH studio">TOUCH studio</span>
             <p class="hero-card-quote" data-sr="«Lepota počinje dodirom»" data-en="«Beauty begins with a touch»">«Lepota počinje dodirom»</p>
-            <div class="hero-card-line"></div>
             <span class="hero-card-loc">Beograd · Braće Nedić 15</span>
           </div>
         </div>
@@ -190,7 +194,8 @@
             <img src="images/ksenia.png" alt="Master Ksenia — TOUCH Beograd" loading="lazy">
           </div>
           <div class="master-info">
-            <h3 data-sr="Master Ksenia" data-en="Master Ksenia">Master Ksenia</h3>
+            <h3 data-sr="Ksenia" data-en="Ksenia">Ksenia</h3>
+            <p data-sr="Majstor manikira i pedikira" data-en="Manicure &amp; pedicure specialist">Majstor manikira i pedikira</p>
           </div>
         </article>
 
@@ -199,7 +204,18 @@
             <img src="images/ekaterina.png" alt="Master Ekaterina — TOUCH Beograd" loading="lazy">
           </div>
           <div class="master-info">
-            <h3 data-sr="Master Ekaterina" data-en="Master Ekaterina">Master Ekaterina</h3>
+            <h3 data-sr="Ekaterina" data-en="Ekaterina">Ekaterina</h3>
+            <p data-sr="Majstor manikira i pedikira" data-en="Manicure &amp; pedicure specialist">Majstor manikira i pedikira</p>
+          </div>
+        </article>
+
+        <article class="master reveal">
+          <div class="photo">
+            <img src="images/jana.jpg" alt="Jana — TOUCH Beograd" loading="lazy">
+          </div>
+          <div class="master-info">
+            <h3 data-sr="Jana" data-en="Yana">Jana</h3>
+            <p data-sr="Majstor kreativne nadogradnje noktiju" data-en="Creative nail extensions specialist">Majstor kreativne nadogradnje noktiju</p>
           </div>
         </article>
 
@@ -220,14 +236,46 @@
 
       <div class="about-grid">
 
-        <div class="about-photo reveal">
-          <img src="images/salon.png" alt="TOUCH salon — Beograd"
-               loading="lazy"
-               style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+        <div class="about-photo salon-carousel reveal" role="region" aria-roledescription="carousel"
+             aria-label="Fotografije salona TOUCH" data-sr-label="Fotografije salona TOUCH" data-en-label="TOUCH salon photos"
+             tabindex="0">
+          <div class="salon-slides" id="salonSlides">
+            <div class="salon-slide is-active" aria-hidden="false">
+              <img src="images/salon.png" alt="Izlog salona TOUCH u Beogradu" data-sr-alt="Izlog salona TOUCH u Beogradu" data-en-alt="TOUCH salon storefront in Belgrade" loading="lazy">
+            </div>
+            <div class="salon-slide" aria-hidden="true">
+              <img src="images/slika1.png" alt="Manikir stolovi u salonu TOUCH" data-sr-alt="Manikir stolovi u salonu TOUCH" data-en-alt="Manicure stations at TOUCH salon" loading="lazy">
+            </div>
+            <div class="salon-slide" aria-hidden="true">
+              <img src="images/slika2.png" alt="Enterijer salona TOUCH i proizvodi za negu" data-sr-alt="Enterijer salona TOUCH i proizvodi za negu" data-en-alt="TOUCH salon interior and care products" loading="lazy">
+            </div>
+            <div class="salon-slide" aria-hidden="true">
+              <img src="images/slika3.jpg" alt="Profesionalni manikir u salonu TOUCH" data-sr-alt="Profesionalni manikir u salonu TOUCH" data-en-alt="Professional manicure at TOUCH salon" loading="lazy">
+            </div>
+            <div class="salon-slide" aria-hidden="true">
+              <img src="images/slika4.png" alt="Radna mesta za manikir u salonu TOUCH" data-sr-alt="Radna mesta za manikir u salonu TOUCH" data-en-alt="Manicure workstations at TOUCH salon" loading="lazy">
+            </div>
+          </div>
           <div class="about-photo-badge">
             <strong>TOUCH</strong>
             <span data-sr="Beograd" data-en="Belgrade">Beograd</span>
           </div>
+          <button type="button" class="carousel-arrow carousel-prev" aria-controls="salonSlides"
+                  aria-label="Prethodna fotografija" data-sr-label="Prethodna fotografija" data-en-label="Previous photo">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg>
+          </button>
+          <button type="button" class="carousel-arrow carousel-next" aria-controls="salonSlides"
+                  aria-label="Sledeća fotografija" data-sr-label="Sledeća fotografija" data-en-label="Next photo">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg>
+          </button>
+          <div class="carousel-dots" role="group" aria-label="Izaberite fotografiju" data-sr-label="Izaberite fotografiju" data-en-label="Choose a photo">
+            <button type="button" class="carousel-dot" aria-current="true" aria-controls="salonSlides" aria-label="Fotografija 1" data-sr-label="Fotografija 1" data-en-label="Photo 1"></button>
+            <button type="button" class="carousel-dot" aria-controls="salonSlides" aria-label="Fotografija 2" data-sr-label="Fotografija 2" data-en-label="Photo 2"></button>
+            <button type="button" class="carousel-dot" aria-controls="salonSlides" aria-label="Fotografija 3" data-sr-label="Fotografija 3" data-en-label="Photo 3"></button>
+            <button type="button" class="carousel-dot" aria-controls="salonSlides" aria-label="Fotografija 4" data-sr-label="Fotografija 4" data-en-label="Photo 4"></button>
+            <button type="button" class="carousel-dot" aria-controls="salonSlides" aria-label="Fotografija 5" data-sr-label="Fotografija 5" data-en-label="Photo 5"></button>
+          </div>
+          <span class="carousel-status visually-hidden" aria-live="polite" aria-atomic="true">1 / 5</span>
         </div>
 
         <div class="about-text reveal">
@@ -281,6 +329,50 @@
           <div class="price-card-head">
             <h3 data-sr="Manikir" data-en="Manicure">Manikir</h3>
             <span class="price-card-icon">✦</span>
+          </div>
+          <div class="salon-carousel service-carousel" role="region" aria-roledescription="carousel"
+               aria-label="Manikir — naši radovi" data-sr-label="Manikir — naši radovi" data-en-label="Manicure — our work" tabindex="0">
+            <div class="salon-slides" id="manicureSlides">
+              <div class="salon-slide is-active" aria-hidden="false">
+                <img src="images/manikir-obican1.jpg" alt="Manikir — naši radovi — 1" data-sr-alt="Manikir — naši radovi — 1" data-en-alt="Manicure — our work — 1" loading="lazy">
+              </div>
+              <div class="salon-slide" aria-hidden="true">
+                <img src="images/manikir-obican2.jpg" alt="Manikir — naši radovi — 2" data-sr-alt="Manikir — naši radovi — 2" data-en-alt="Manicure — our work — 2" loading="lazy">
+              </div>
+              <div class="salon-slide" aria-hidden="true">
+                <img src="images/manikir-obican3.jpg" alt="Manikir — naši radovi — 3" data-sr-alt="Manikir — naši radovi — 3" data-en-alt="Manicure — our work — 3" loading="lazy">
+              </div>
+              <div class="salon-slide" aria-hidden="true">
+                <img src="images/manikir-obican4.jpg" alt="Manikir — naši radovi — 4" data-sr-alt="Manikir — naši radovi — 4" data-en-alt="Manicure — our work — 4" loading="lazy">
+              </div>
+              <div class="salon-slide" aria-hidden="true">
+                <img src="images/manikir-obican5.jpg" alt="Manikir — naši radovi — 5" data-sr-alt="Manikir — naši radovi — 5" data-en-alt="Manicure — our work — 5" loading="lazy">
+              </div>
+              <div class="salon-slide" aria-hidden="true">
+                <img src="images/manikir-obican6.jpg" alt="Manikir — naši radovi — 6" data-sr-alt="Manikir — naši radovi — 6" data-en-alt="Manicure — our work — 6" loading="lazy">
+              </div>
+              <div class="salon-slide" aria-hidden="true">
+                <img src="images/manikir-obican7.jpg" alt="Manikir — naši radovi — 7" data-sr-alt="Manikir — naši radovi — 7" data-en-alt="Manicure — our work — 7" loading="lazy">
+              </div>
+            </div>
+            <button type="button" class="carousel-arrow carousel-prev" aria-controls="manicureSlides"
+                    aria-label="Prethodna fotografija" data-sr-label="Prethodna fotografija" data-en-label="Previous photo">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg>
+            </button>
+            <button type="button" class="carousel-arrow carousel-next" aria-controls="manicureSlides"
+                    aria-label="Sledeća fotografija" data-sr-label="Sledeća fotografija" data-en-label="Next photo">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg>
+            </button>
+            <div class="carousel-dots" role="group" aria-label="Izaberite fotografiju" data-sr-label="Izaberite fotografiju" data-en-label="Choose a photo">
+              <button type="button" class="carousel-dot" aria-current="true" aria-controls="manicureSlides" aria-label="Fotografija 1" data-sr-label="Fotografija 1" data-en-label="Photo 1"></button>
+              <button type="button" class="carousel-dot" aria-controls="manicureSlides" aria-label="Fotografija 2" data-sr-label="Fotografija 2" data-en-label="Photo 2"></button>
+              <button type="button" class="carousel-dot" aria-controls="manicureSlides" aria-label="Fotografija 3" data-sr-label="Fotografija 3" data-en-label="Photo 3"></button>
+              <button type="button" class="carousel-dot" aria-controls="manicureSlides" aria-label="Fotografija 4" data-sr-label="Fotografija 4" data-en-label="Photo 4"></button>
+              <button type="button" class="carousel-dot" aria-controls="manicureSlides" aria-label="Fotografija 5" data-sr-label="Fotografija 5" data-en-label="Photo 5"></button>
+              <button type="button" class="carousel-dot" aria-controls="manicureSlides" aria-label="Fotografija 6" data-sr-label="Fotografija 6" data-en-label="Photo 6"></button>
+              <button type="button" class="carousel-dot" aria-controls="manicureSlides" aria-label="Fotografija 7" data-sr-label="Fotografija 7" data-en-label="Photo 7"></button>
+            </div>
+            <span class="carousel-status" aria-live="polite" aria-atomic="true">1 / 7</span>
           </div>
           <ul>
             <li class="price-row">
@@ -345,6 +437,38 @@
           <div class="price-card-head">
             <h3 data-sr="Pedikir" data-en="Pedicure">Pedikir</h3>
             <span class="price-card-icon">✦</span>
+          </div>
+          <div class="salon-carousel service-carousel" role="region" aria-roledescription="carousel"
+               aria-label="Pedikir — naši radovi" data-sr-label="Pedikir — naši radovi" data-en-label="Pedicure — our work" tabindex="0">
+            <div class="salon-slides" id="pedicureSlides">
+              <div class="salon-slide is-active" aria-hidden="false">
+                <img src="images/pedikir1.jpg" alt="Pedikir — naši radovi — 1" data-sr-alt="Pedikir — naši radovi — 1" data-en-alt="Pedicure — our work — 1" loading="lazy">
+              </div>
+              <div class="salon-slide" aria-hidden="true">
+                <img src="images/pedikir2.jpg" alt="Pedikir — naši radovi — 2" data-sr-alt="Pedikir — naši radovi — 2" data-en-alt="Pedicure — our work — 2" loading="lazy">
+              </div>
+              <div class="salon-slide" aria-hidden="true">
+                <img src="images/pedikir3.jpg" alt="Pedikir — naši radovi — 3" data-sr-alt="Pedikir — naši radovi — 3" data-en-alt="Pedicure — our work — 3" loading="lazy">
+              </div>
+              <div class="salon-slide" aria-hidden="true">
+                <img src="images/pedikir4.jpg" alt="Pedikir — naši radovi — 4" data-sr-alt="Pedikir — naši radovi — 4" data-en-alt="Pedicure — our work — 4" loading="lazy">
+              </div>
+            </div>
+            <button type="button" class="carousel-arrow carousel-prev" aria-controls="pedicureSlides"
+                    aria-label="Prethodna fotografija" data-sr-label="Prethodna fotografija" data-en-label="Previous photo">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg>
+            </button>
+            <button type="button" class="carousel-arrow carousel-next" aria-controls="pedicureSlides"
+                    aria-label="Sledeća fotografija" data-sr-label="Sledeća fotografija" data-en-label="Next photo">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg>
+            </button>
+            <div class="carousel-dots" role="group" aria-label="Izaberite fotografiju" data-sr-label="Izaberite fotografiju" data-en-label="Choose a photo">
+              <button type="button" class="carousel-dot" aria-current="true" aria-controls="pedicureSlides" aria-label="Fotografija 1" data-sr-label="Fotografija 1" data-en-label="Photo 1"></button>
+              <button type="button" class="carousel-dot" aria-controls="pedicureSlides" aria-label="Fotografija 2" data-sr-label="Fotografija 2" data-en-label="Photo 2"></button>
+              <button type="button" class="carousel-dot" aria-controls="pedicureSlides" aria-label="Fotografija 3" data-sr-label="Fotografija 3" data-en-label="Photo 3"></button>
+              <button type="button" class="carousel-dot" aria-controls="pedicureSlides" aria-label="Fotografija 4" data-sr-label="Fotografija 4" data-en-label="Photo 4"></button>
+            </div>
+            <span class="carousel-status" aria-live="polite" aria-atomic="true">1 / 4</span>
           </div>
           <ul>
             <li class="price-row">
@@ -422,6 +546,42 @@
           <div class="price-card-head">
             <h3 data-sr="Medicinski pedikir" data-en="Medical pedicure">Medicinski pedikir</h3>
             <span class="price-card-icon">✦</span>
+          </div>
+          <div class="salon-carousel service-carousel" role="region" aria-roledescription="carousel"
+               aria-label="Medicinski pedikir — naši radovi" data-sr-label="Medicinski pedikir — naši radovi" data-en-label="Medical pedicure — our work" tabindex="0">
+            <div class="salon-slides" id="medicalPedicureSlides">
+              <div class="salon-slide is-active" aria-hidden="false">
+                <img src="images/manik-med1.jpg" alt="Medicinski pedikir — naši radovi — 1" data-sr-alt="Medicinski pedikir — naši radovi — 1" data-en-alt="Medical pedicure — our work — 1" loading="lazy">
+              </div>
+              <div class="salon-slide" aria-hidden="true">
+                <img src="images/manik-med2.jpg" alt="Medicinski pedikir — naši radovi — 2" data-sr-alt="Medicinski pedikir — naši radovi — 2" data-en-alt="Medical pedicure — our work — 2" loading="lazy">
+              </div>
+              <div class="salon-slide" aria-hidden="true">
+                <img src="images/manik-med3.jpg" alt="Medicinski pedikir — naši radovi — 3" data-sr-alt="Medicinski pedikir — naši radovi — 3" data-en-alt="Medical pedicure — our work — 3" loading="lazy">
+              </div>
+              <div class="salon-slide" aria-hidden="true">
+                <img src="images/manik-med4.jpg" alt="Medicinski pedikir — naši radovi — 4" data-sr-alt="Medicinski pedikir — naši radovi — 4" data-en-alt="Medical pedicure — our work — 4" loading="lazy">
+              </div>
+              <div class="salon-slide" aria-hidden="true">
+                <img src="images/manik-med5.jpg" alt="Medicinski pedikir — naši radovi — 5" data-sr-alt="Medicinski pedikir — naši radovi — 5" data-en-alt="Medical pedicure — our work — 5" loading="lazy">
+              </div>
+            </div>
+            <button type="button" class="carousel-arrow carousel-prev" aria-controls="medicalPedicureSlides"
+                    aria-label="Prethodna fotografija" data-sr-label="Prethodna fotografija" data-en-label="Previous photo">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg>
+            </button>
+            <button type="button" class="carousel-arrow carousel-next" aria-controls="medicalPedicureSlides"
+                    aria-label="Sledeća fotografija" data-sr-label="Sledeća fotografija" data-en-label="Next photo">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg>
+            </button>
+            <div class="carousel-dots" role="group" aria-label="Izaberite fotografiju" data-sr-label="Izaberite fotografiju" data-en-label="Choose a photo">
+              <button type="button" class="carousel-dot" aria-current="true" aria-controls="medicalPedicureSlides" aria-label="Fotografija 1" data-sr-label="Fotografija 1" data-en-label="Photo 1"></button>
+              <button type="button" class="carousel-dot" aria-controls="medicalPedicureSlides" aria-label="Fotografija 2" data-sr-label="Fotografija 2" data-en-label="Photo 2"></button>
+              <button type="button" class="carousel-dot" aria-controls="medicalPedicureSlides" aria-label="Fotografija 3" data-sr-label="Fotografija 3" data-en-label="Photo 3"></button>
+              <button type="button" class="carousel-dot" aria-controls="medicalPedicureSlides" aria-label="Fotografija 4" data-sr-label="Fotografija 4" data-en-label="Photo 4"></button>
+              <button type="button" class="carousel-dot" aria-controls="medicalPedicureSlides" aria-label="Fotografija 5" data-sr-label="Fotografija 5" data-en-label="Photo 5"></button>
+            </div>
+            <span class="carousel-status" aria-live="polite" aria-atomic="true">1 / 5</span>
           </div>
           <ul>
             <li class="price-row">
@@ -810,6 +970,13 @@
       if (value !== undefined) el.textContent = value;
     });
 
+    document.querySelectorAll('[data-sr-label]').forEach(function (el) {
+      el.setAttribute('aria-label', el.getAttribute('data-' + lang + '-label'));
+    });
+    document.querySelectorAll('[data-sr-alt]').forEach(function (el) {
+      el.setAttribute('alt', el.getAttribute('data-' + lang + '-alt'));
+    });
+
     langButtons.forEach(function (b) {
       b.classList.toggle('is-active', b.dataset.lang === lang);
     });
@@ -826,6 +993,52 @@
   if (saved === 'en') setLang('en');
 
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  document.querySelectorAll('.salon-carousel').forEach(function (carousel) {
+    var slides = carousel.querySelectorAll('.salon-slide');
+    var dots = carousel.querySelectorAll('.carousel-dot');
+    var status = carousel.querySelector('.carousel-status');
+    var current = 0;
+    var touchStart = null;
+
+    function goToSlide(index) {
+      current = (index + slides.length) % slides.length;
+      slides.forEach(function (slide, i) {
+        slide.classList.toggle('is-active', i === current);
+        slide.setAttribute('aria-hidden', i === current ? 'false' : 'true');
+      });
+      dots.forEach(function (dot, i) {
+        if (i === current) dot.setAttribute('aria-current', 'true');
+        else dot.removeAttribute('aria-current');
+      });
+      status.textContent = (current + 1) + ' / ' + slides.length;
+    }
+
+    carousel.querySelector('.carousel-prev').addEventListener('click', function () { goToSlide(current - 1); });
+    carousel.querySelector('.carousel-next').addEventListener('click', function () { goToSlide(current + 1); });
+    dots.forEach(function (dot, i) {
+      dot.addEventListener('click', function () { goToSlide(i); });
+    });
+    carousel.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft' || e.key === 'ArrowRight' || e.key === 'Home' || e.key === 'End') {
+        e.preventDefault();
+        if (e.key === 'Home') goToSlide(0);
+        else if (e.key === 'End') goToSlide(slides.length - 1);
+        else goToSlide(current + (e.key === 'ArrowRight' ? 1 : -1));
+      }
+    });
+    carousel.addEventListener('touchstart', function (e) {
+      touchStart = e.touches.length === 1 ? { x: e.touches[0].clientX, y: e.touches[0].clientY } : null;
+    }, { passive: true });
+    carousel.addEventListener('touchend', function (e) {
+      if (!touchStart || !e.changedTouches.length) return;
+      var dx = e.changedTouches[0].clientX - touchStart.x;
+      var dy = e.changedTouches[0].clientY - touchStart.y;
+      touchStart = null;
+      if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)) goToSlide(current + (dx < 0 ? 1 : -1));
+    }, { passive: true });
+    carousel.addEventListener('touchcancel', function () { touchStart = null; }, { passive: true });
+  });
 
   function onScroll() {
     if (window.scrollY > 20) header.classList.add('is-scrolled');
