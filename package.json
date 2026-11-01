@@ -1,0 +1,12 @@
+{
+  "name": "touch-belgrade",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test scripts/seo.test.mjs",
+    "preview": "node scripts/serve.mjs",
+    "optimize-images": "node scripts/optimize-images.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

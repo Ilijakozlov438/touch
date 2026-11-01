@@ -1,0 +1,152 @@
+{
+  "images/logo.png": {
+    "src": "images/web/logo.webp",
+    "width": 600,
+    "height": 261,
+    "sourceHash": "42c4ca9e4c4db892aca9c6de61cedb09068091bc4a343baf307871b1142b8158"
+  },
+  "images/hero-storefront.webp": {
+    "src": "images/hero-storefront.webp",
+    "width": 956,
+    "height": 1280,
+    "sourceHash": "e900cd3cfd1b2aff4869b5025dcd7a975c318b5c6c9e907e4abea4bf09988101"
+  },
+  "images/ksenia.png": {
+    "src": "images/web/ksenia.webp",
+    "width": 960,
+    "height": 960,
+    "sourceHash": "369c2167364bf527f22f227dc4f9927a8ba1ce79e429809647fa2bb0af7c7fe0"
+  },
+  "images/ekaterina.png": {
+    "src": "images/web/ekaterina.webp",
+    "width": 960,
+    "height": 960,
+    "sourceHash": "9ba9987969d8afc0c969a7d41ab35e69161ed0ee7091dd986473c030bec6a302"
+  },
+  "images/jana.jpg": {
+    "src": "images/web/jana.webp",
+    "width": 960,
+    "height": 1200,
+    "sourceHash": "c10739e06114484e71c20cd806fffaf9fab39937e6518e94b03597a4adaa050f"
+  },
+  "images/salon.png": {
+    "src": "images/web/salon.webp",
+    "width": 956,
+    "height": 1280,
+    "sourceHash": "f6bf7298ce2082ffdf67b08c41aab1f3a16ead62359d3438b0b16ddef5c136a9"
+  },
+  "images/slika1.png": {
+    "src": "images/web/slika1.webp",
+    "width": 719,
+    "height": 719,
+    "sourceHash": "4fd74f6342d89d641ddf32f9ed0218972a54e62470d6918e649306ac1128350c"
+  },
+  "images/slika2.png": {
+    "src": "images/web/slika2.webp",
+    "width": 720,
+    "height": 1280,
+    "sourceHash": "1de796177da58f5b6d256fa8770225134b8f31c50a74e610ac511ea32c8affa2"
+  },
+  "images/slika3.jpg": {
+    "src": "images/web/slika3.webp",
+    "width": 706,
+    "height": 1256,
+    "sourceHash": "9ffa288ce92220804ce5fe9f61a0c481ad577fb4ca7626957b7e51c552f9d1a0"
+  },
+  "images/slika4.png": {
+    "src": "images/web/slika4.webp",
+    "width": 720,
+    "height": 1280,
+    "sourceHash": "4b503de8007aba0ed4f907a4926380e712624627af26b44a1ec299d61a9b1a8e"
+  },
+  "images/manikir-obican1.jpg": {
+    "src": "images/web/manikir-obican1.webp",
+    "width": 719,
+    "height": 1279,
+    "sourceHash": "9d0f1d24238f9cf12692388039b5157b86c3fc4e11f36acf15f8fc2b33675286"
+  },
+  "images/manikir-obican2.jpg": {
+    "src": "images/web/manikir-obican2.webp",
+    "width": 720,
+    "height": 1280,
+    "sourceHash": "1cfed438754bb816195c60ed6565bee9107be64c2a6bca73dc9659bc89a80d50"
+  },
+  "images/manikir-obican3.jpg": {
+    "src": "images/web/manikir-obican3.webp",
+    "width": 720,
+    "height": 1280,
+    "sourceHash": "ba027cc52f71216c21cc0e29af745b8b738f05fffcba05b7eb74b00cad821b17"
+  },
+  "images/manikir-obican4.jpg": {
+    "src": "images/web/manikir-obican4.webp",
+    "width": 720,
+    "height": 1280,
+    "sourceHash": "65278fd60982de5d9579c53cc462f4f44a0262e4868ff267e8c803b283f6faa7"
+  },
+  "images/manikir-obican5.jpg": {
+    "src": "images/web/manikir-obican5.webp",
+    "width": 719,
+    "height": 1279,
+    "sourceHash": "782a4ea5beffee109128ad17d7015aff170cadf310f1cdd274cfe121d4ff5108"
+  },
+  "images/manikir-obican6.jpg": {
+    "src": "images/web/manikir-obican6.webp",
+    "width": 720,
+    "height": 1280,
+    "sourceHash": "ff8be68a2e41471a2db931f8a479d25a835bf6779a226d80fb7deb2b3f3c37f1"
+  },
+  "images/manikir-obican7.jpg": {
+    "src": "images/web/manikir-obican7.webp",
+    "width": 720,
+    "height": 1280,
+    "sourceHash": "5495b8196babbd7122b947d75621ccd03c6c48607031c8ab2bb3b8294047c7fd"
+  },
+  "images/pedikir1.jpg": {
+    "src": "images/web/pedikir1.webp",
+    "width": 721,
+    "height": 1280,
+    "sourceHash": "5b539c9b984f06f9127e08dc705601fe7f5eb51a704f64dacb9bc979d4d67d25"
+  },
+  "images/pedikir2.jpg": {
+    "src": "images/web/pedikir2.webp",
+    "width": 720,
+    "height": 1280,
+    "sourceHash": "e05b0b20cd327622d412f370895b6f4ec33c870608bb6918302ef91682d2acc4"
+  },
+  "images/pedikir3.jpg": {
+    "src": "images/web/pedikir3.webp",
+    "width": 720,
+    "height": 1280,
+    "sourceHash": "5da4ad3f7c3ad84e5316938f7667e9aca897457bad42c15e0507f45861fa4a18"
+  },
+  "images/pedikir4.jpg": {
+    "src": "images/web/pedikir4.webp",
+    "width": 720,
+    "height": 1280,
+    "sourceHash": "46090d4b271dab46376d294e5479f80b42ccbc8a2862d275cdd4a7d3977d3733"
+  },
+  "images/manik-med1.jpg": {
+    "src": "images/web/manik-med1.webp",
+    "width": 720,
+    "height": 1280,
+    "sourceHash": "f7a19a9884bf1e54276923dd59d2b5c5c9200801058e799254adacef77e4a45e"
+  },
+  "images/manik-med2.jpg": {
+    "src": "images/web/manik-med2.webp",
+    "width": 720,
+    "height": 1280,
+    "sourceHash": "c6c1c2b524eb5bc9f897c89a0b2e6fc1bfae2428d5ff602bbf2911e2f35ea288"
+  },
+  "images/manik-med3.jpg": {
+    "src": "images/web/manik-med3.webp",
+    "width": 960,
+    "height": 960,
+    "sourceHash": "4face6625618e8fad3e77331eadda5e5d41c3c7b37ca3df88a72c514748e0362"
+  },
+  "images/manik-med4.jpg": {
+    "src": "images/web/manik-med4.webp",
+    "width": 960,
+    "height": 1280,
+    "sourceHash": "a8ac1f480af274180dce8b55e7edeea4572eac6334cb59eee19385b803c94a77"
+  }
+}
